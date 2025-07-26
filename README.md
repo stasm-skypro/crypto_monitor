@@ -10,10 +10,13 @@
 
 ## Структура проекта
 
-├── backend/     # FastAPI-приложение
-├   ├── .env.example
-├── frontend/    # React-приложение
-└── README.md
+* backend/     # FastAPI-приложение
+
+  * .env.example
+
+* frontend/    # React-приложение
+
+* README.md
 
 ## Запуск проекта
 
