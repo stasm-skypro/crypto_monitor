@@ -20,7 +20,11 @@ class Settings(BaseSettings):
     """
     CMC_APY_KEY: str = "default_or_placeholder"
 
-    model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8")
+    model_config = SettingsConfigDict(
+        env_file=".env",
+        env_file_encoding="utf-8",
+        extra="ignore",  # <-- чтобы pydantic не ругался и пропутил VITE_API_URL из .env
+    )
 
 
 settings = Settings()
