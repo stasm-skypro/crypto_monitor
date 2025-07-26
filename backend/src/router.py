@@ -43,7 +43,7 @@ async def get_currencies() -> list:
     return await cmc_client.get_listings()
 
 
-@router.get("/{currency_id}", tags=["currencies/{currency_id}"])
+@router.get("/{currency_id}")
 async def get_currency(currency_id: int) -> dict:
     """
     Получает информацию о конкретной криптовалюте по её идентификатору.
