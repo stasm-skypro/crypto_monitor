@@ -43,6 +43,10 @@ npm run dev
 docker-compose up --build
 ```
 
+•	Бэкенд (FastAPI/docs): http://localhost:8000/docs/
+
+•	Фронт доступен по адресу: http://localhost:5173/
+
 ## API
 
 ### GET /currencies
