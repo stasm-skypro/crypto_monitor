@@ -24,7 +24,7 @@ const App = () => {
   const fetchCurrencies = async () => {
     try {
       // const response = await axios.get("http://127.0.0.1:8000/currencies");
-      const response = await axios.get(`${import.meta.env.VITE_API_URL}/currencies`)
+      const response = await axios.get(`${import.meta.env.VITE_API_URL}/currencies`);
       const currenciesData = response.data;
 
       const menuItems = [
