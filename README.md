@@ -125,4 +125,4 @@ CMC_APY_KEY=coinmarketcap_api_key
 
 ## Благодарности
 
-Отдельная благодарность Артёму Шумейко и его блогу за идею и обучающее [***видео***](https://www.youtube.com/@artemshumeiko).
+Отдельная благодарность [***Артёму Шумейко***](https://www.youtube.com/@artemshumeiko] и его блогу за идею и обучающее видео.
