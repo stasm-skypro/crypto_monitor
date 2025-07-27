@@ -1,7 +1,7 @@
 [project]
 name = "CryptoMonitor"
 version = "0.1.1"
-description = "Crypto Monitor"
+description = "Crypto Monitor - веб-приложение для мониторинга актуальной информации о криптовалютах."
 authors = [
     {name = "Станислав Маяцкий",email = "stasm226@gmail.com"}
 ]
