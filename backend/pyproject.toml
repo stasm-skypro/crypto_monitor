@@ -1,5 +1,5 @@
 [project]
-name = "Crypto Monitor"
+name = "CryptoMonitor"
 version = "0.1.1"
 description = "Crypto Monitor"
 authors = [
