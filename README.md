@@ -55,7 +55,7 @@ npm run dev
 #### 🐳 Через Docker
 
 ```bash
-docker-compose up --build
+docker compose build --no-cache && docker compose up
 ```
 
 •	Бэкенд (FastAPI/docs): http://localhost:8000/docs/
