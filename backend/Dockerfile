@@ -4,11 +4,13 @@ FROM python:3.11-slim
 
 # Установка зависимостей
 WORKDIR /app
-COPY backend/requirements.txt .
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Копируем код
-COPY backend /app
+COPY . .
+
+EXPOSE 8000
 
 # Переменные окружения
 ENV PYTHONUNBUFFERED=1

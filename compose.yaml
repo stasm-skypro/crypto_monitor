@@ -3,24 +3,27 @@ version: '3.9'
 services:
   backend:
     build:
-      context: .
+      context: ./backend
       dockerfile: backend/Dockerfile
-    container_name: cryptomonitor-backend
+    container_name: cryptotracker-backend
     ports:
       - "8000:8000"
     env_file:
       - backend/.env
     restart: unless-stopped
+    # Добавлено для отладки, если нужно видеть логи FastAPI
+    command: uvicorn main:app --host 0.0.0.0 --port 8000
 
   frontend:
     build:
-      context: .
+      context: ./frontend
       dockerfile: frontend/Dockerfile
-      args:
-        VITE_API_URL: http://backend:8000
-    container_name: cryptomonitor-frontend
+    container_name: cryptotracker-frontend
     ports:
       - "3000:80"
+    environment:
+      # Передаем URL бэкенда по имени сервиса в Docker Compose
+      - VITE_API_URL=http://backend:8000
     restart: unless-stopped
     depends_on:
       - backend
