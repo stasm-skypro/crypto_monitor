@@ -5,7 +5,7 @@ FROM node:20 AS builder
 # Установка зависимостей
 WORKDIR /app
 # Копируем package.json в текущую рабочую директорию /app
-COPY frontend/package*.json ./
+COPY package*.json ./
 RUN npm install
 
 # # Копируем исходный код из контекста (который ./frontend)
