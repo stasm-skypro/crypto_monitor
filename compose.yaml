@@ -4,7 +4,7 @@ services:
   backend:
     build:
       context: ./backend
-      dockerfile: backend/Dockerfile
+      dockerfile: Dockerfile
     container_name: cryptotracker-backend
     ports:
       - "8000:8000"
@@ -17,7 +17,7 @@ services:
   frontend:
     build:
       context: ./frontend
-      dockerfile: frontend/Dockerfile
+      dockerfile: Dockerfile
     container_name: cryptotracker-frontend
     ports:
       - "3000:80"
